@@ -167,6 +167,10 @@ ol {
   gap: 2rem;
   margin: 3rem 0;
   padding: 0;
+}
+
+#game-board > li {
+  display: flex;
   flex-direction: column;
 }
 
@@ -174,9 +178,10 @@ ol {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 #game-board button {
@@ -191,6 +196,21 @@ ol {
   padding: 1rem;
 }
 
+@media (max-width: 600px) {
+  #game-board button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+
+  #game-board ol {
+    gap: 0.25rem;
+  }
+
+  #game-board {
+    gap: 1rem;
+  }
+}
 #game-over {
   position: absolute;
   top: 0;
