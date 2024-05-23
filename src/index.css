@@ -197,6 +197,12 @@ ol {
 }
 
 @media (max-width: 600px) {
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
   #game-board button {
     width: 5rem;
     height: 5rem;
@@ -205,10 +211,6 @@ ol {
 
   #game-board ol {
     gap: 0.25rem;
-  }
-
-  #game-board {
-    gap: 1rem;
   }
 }
 #game-over {
